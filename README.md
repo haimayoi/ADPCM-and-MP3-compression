@@ -31,14 +31,15 @@ The project includes all source code, processed audio files, visualizations, and
 ---
 
 ## 📁 Folder Structure
-project-root/
-├── audio/               # Input/output audio files (WAV, MP3, ADPCM)
-├── midi/                # Generated MIDI files
-├── code/                # Source code (MATLAB, Python, C)
-├── report/              # Report files (PDF, DOCX, figures)
-├── presentation/        # Final video presentation (5–7 mins)
-├── README.md            # Project info and documentation
-└── CONTRIBUTORS.md      # Appendix with individual contributions
+project-root:
+  cutframe.py:             # Captures video from webcam and extracts frames
+  encoding.py:             # Encodes facial data for face recognition
+  check_attendance.py:     # Handles attendance checking using facial data
+  emotion.py:              # Detects and analyzes students' emotions
+  merge.py:                # Integrates attendance checking and emotion detection
+  data/:                   # Directory for storing student data and logs
+  models/:                 # Pretrained models for face recognition and emotion detection
+  outputs/:                # Attendance logs and emotion analysis reports
 
 ---
 
