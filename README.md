@@ -31,15 +31,16 @@ The project includes all source code, processed audio files, visualizations, and
 ---
 
 ## 📁 Folder Structure
-project-root:
-  cutframe.py:             # Captures video from webcam and extracts frames
-  encoding.py:             # Encodes facial data for face recognition
-  check_attendance.py:     # Handles attendance checking using facial data
-  emotion.py:              # Detects and analyzes students' emotions
-  merge.py:                # Integrates attendance checking and emotion detection
-  data/:                   # Directory for storing student data and logs
-  models/:                 # Pretrained models for face recognition and emotion detection
-  outputs/:                # Attendance logs and emotion analysis reports
+```plaintext
+|-- 1_show_spectrum/         # Visualizes the frequency spectrum of the original audio
+|-- 2_adpcm_compression/     # Compresses audio using the ADPCM codec
+|-- 3_psnr_analysis/         # Calculates PSNR between original, ADPCM, and MP3 files
+|-- 4_mix_midi_jazz_song/    # Mixes a jazz track from the generated MIDI file
+|-- MIDI_Jazz_Generation/    # Automatically generates a MIDI file using Python
+|   └── jazz.py              # Python script for generating random jazz melodies
+|-- input/                   # Contains original input audio files
+|-- output/                  # Stores compressed files, spectrum plots, and PSNR results
+```
 
 ---
 
